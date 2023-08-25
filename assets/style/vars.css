@@ -1,0 +1,14 @@
+:root {
+  --color-accent: #cf37ff;
+  --color-bg-primary: #10022c;
+  --color-bg-secondary: #1c014e;
+  --color-bg-tertiary: #09001a;
+  --color-bg-opacity: rgba(17, 2, 45, 0.7);
+  --color-bg-accent: #ffffff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #777777;
+  --color-text-tertiary: #ffffff80;
+
+  --gradient-primary: linear-gradient(180deg, #d137ff 0%, #5918e5 100%);
+  --gradient-secondary: linear-gradient(180deg, rgba(79, 0, 229, 1) 0%, #09001a 100%);
+}

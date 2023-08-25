@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../font/Inter/Inter-Regular.woff2") format("woff2"),
+    url("../font/Inter/Inter-Regular.woff") format("woff"),
+    url("../font/Inter/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url("../font/Inter/Inter-SemiBold.woff2") format("woff2"),
+    url("../font/Inter/Inter-SemiBold.woff") format("woff"),
+    url("../font/Inter/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../font/Inter/Inter-Bold.woff2") format("woff2"),
+    url("../font/Inter/Inter-Bold.woff") format("woff"),
+    url("../font/Inter/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../font/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("../font/Montserrat/Montserrat-Regular.woff") format("woff"),
+    url("../font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}

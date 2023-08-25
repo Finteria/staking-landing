@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
-})
+  css: ["normalize.css", "@/assets/style/vars.css", "@/assets/style/font.css", "@/assets/style/main.css"],
+});

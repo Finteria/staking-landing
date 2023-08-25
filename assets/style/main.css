@@ -1,0 +1,45 @@
+.page {
+  font-family: Inter, Montserrat, sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  background-image: url("/images/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 360px;
+  background-position: center 420px;
+}
+
+.webp .page,
+.avif .page {
+  background-image: url("/images/main-bg.webp");
+}
+
+@media (min-resolution: 2dppx) {
+  .page {
+    background-image: url("/images/main-bg@2x.png");
+  }
+
+  .webp .page,
+  .avif .page {
+    background-image: url("/images/main-bg@2x.webp");
+  }
+}
+
+.container {
+  width: 360px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,55 @@
+<template>
+  <section class="crypto">
+    <div class="container">
+      <ul class="crypto__list">
+        <CryptoCard v-for="(cryptoItem, idx) in crypto" :key="idx" class="crypto__item" :icon="cryptoItem.icon">
+          <template #title>
+            {{ cryptoItem.title }}
+          </template>
+
+          <template #lead>
+            {{ cryptoItem.lead }}
+          </template>
+        </CryptoCard>
+      </ul>
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import CryptoCard from "@/components/CryptoCard.vue";
+
+interface Crypto {
+  title: string;
+  lead: string;
+  icon: string;
+}
+
+const i18n = useI18n();
+const crypto = computed<Crypto[]>(() => {
+  const i18nSteps = i18n.messages.value[i18n.locale.value].crypto;
+
+  return (i18nSteps as any).items as Crypto[];
+});
+</script>
+
+<style scoped>
+.crypto__list {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 214px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.crypto__item:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+</style>
