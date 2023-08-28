@@ -35,4 +35,12 @@ withDefaults(defineProps<Props>(), {
   padding: 0 30px;
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+  .basic-button {
+    font-size: 20px;
+    line-height: 70px;
+    padding: 0 50px;
+  }
+}
 </style>

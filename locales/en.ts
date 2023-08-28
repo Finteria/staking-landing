@@ -1,7 +1,9 @@
 export default {
-  mainTitle: "Double portfolio in 30 sec by predicting the market",
-  mainLead: "Earn passive income up to 10% APY",
-  growMyCrypto: "Grow my crypto",
+  main: {
+    title: "Double portfolio in 30 sec by predicting the market",
+    lear: "Earn passive income up to 10% APY",
+    growMyCrypto: "Grow my crypto",
+  },
   howItWork: "How does it work?",
   advantages: {
     title: "Advantages",
@@ -27,8 +29,8 @@ export default {
         text: "Stocks, crypto, commodities",
       },
     ],
+    startTradingCrypto: "Start trading crypto",
   },
-  startTradingCrypto: "Start trading crypto",
   steps: {
     title: "Steps",
     items: [

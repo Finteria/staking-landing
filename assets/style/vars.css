@@ -11,4 +11,6 @@
 
   --gradient-primary: linear-gradient(180deg, #d137ff 0%, #5918e5 100%);
   --gradient-secondary: linear-gradient(180deg, rgba(79, 0, 229, 1) 0%, #09001a 100%);
+
+  --shadow-primary: rgba(206, 55, 255, 0.4);
 }

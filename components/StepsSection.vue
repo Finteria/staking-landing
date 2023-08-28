@@ -34,17 +34,33 @@ const steps = computed<Step[]>(() => {
 </script>
 
 <style scoped>
-.steps {
-  padding: 30px 0;
-}
-
 .step-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .step-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+/* @media screen and (min-width: 1376px) {
+  .step-list {
+    gap: 30px;
+  }
+} */
+
 .step-list__item:not(:first-child) {
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .step-list__item:not(:first-child) {
+    margin: 0;
+  }
 }
 </style>

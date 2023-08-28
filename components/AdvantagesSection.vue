@@ -13,7 +13,9 @@
         </AdvantageCard>
       </ul>
 
-      <BasicButton class="advantages__start" link>{{ $t("startTradingCrypto") }}</BasicButton>
+      <BasicButton class="advantages__start" link href="#limited">{{
+        $t("advantages.startTradingCrypto")
+      }}</BasicButton>
     </div>
   </section>
 </template>
@@ -52,7 +54,19 @@ const advantages = computed<Advantage[]>(() => {
   padding: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .advantages-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .advantages__start {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__start {
+    margin-top: 65px;
+  }
 }
 </style>

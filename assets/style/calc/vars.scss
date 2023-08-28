@@ -1,0 +1,31 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+// Colors
+
+$blue-darkest: #1d407c;
+$blue-dark: #306bcf;
+$blue: #4785ef;
+$blue-light: #5d94f1;
+
+$yellow-dark: #e9bb1e;
+$yellow: #fbc920;
+$yellow-light: #fcd758;
+$yellow-lightest: #feefbc;
+
+$sky-dark: #120f6c;
+$sky: #120f6c;
+$sky-light: #eff8ff;
+
+$black: #222222;
+$gray-dark: #777777;
+$gray: #a6a6a6;
+$gray-light: #d9d9d9;
+
+// coefficient
+$coefficient: 1;

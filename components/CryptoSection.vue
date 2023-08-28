@@ -40,10 +40,21 @@ const crypto = computed<Crypto[]>(() => {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  max-width: 645px;
   height: 214px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .crypto__list {
+    position: static;
+    height: auto;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 
 .crypto__item:nth-child(2) {
@@ -51,5 +62,12 @@ const crypto = computed<Crypto[]>(() => {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .crypto__item:nth-child(2) {
+    position: static;
+    transform: none;
+  }
 }
 </style>
