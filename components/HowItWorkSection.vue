@@ -22,7 +22,20 @@ const onClickRegister = () => {
 @import "@/assets/style/calc/calc.scss";
 
 .how-it-work__container {
+  padding-bottom: 15px;
   background-color: rgba(17, 2, 45, 0.7);
+}
+
+@media screen and (min-width: 1024px) {
+  .how-it-work__container {
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .how-it-work__container {
+    padding-bottom: 40px;
+  }
 }
 
 .how-it-work__title {
