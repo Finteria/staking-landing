@@ -35,9 +35,9 @@ const steps = computed<Step[]>(() => {
 
 <style scoped>
 .step-list {
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,11 +48,11 @@ const steps = computed<Step[]>(() => {
   }
 }
 
-/* @media screen and (min-width: 1376px) {
+@media screen and (min-width: 1376px) {
   .step-list {
     gap: 30px;
   }
-} */
+}
 
 .step-list__item:not(:first-child) {
   margin-top: 10px;

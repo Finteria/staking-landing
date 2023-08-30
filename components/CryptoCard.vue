@@ -33,12 +33,12 @@ withDefaults(defineProps<Props>(), {
 }
 
 .crypto-card::before {
-  content: "";
   width: 60px;
   height: 60px;
-  background-size: contain;
-  background-position: center;
+  content: "";
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .crypto-card--cointelegraph::before {
@@ -54,11 +54,11 @@ withDefaults(defineProps<Props>(), {
 }
 
 .crypto-card__title {
+  margin: 0;
+  margin-top: 10px;
   font-family: Montserrat, Inter, sans-serif;
   font-size: 15px;
   line-height: 1.3;
-  margin: 0;
-  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -68,16 +68,16 @@ withDefaults(defineProps<Props>(), {
 }
 
 .crypto-card__lead {
+  margin: 0;
   font-size: 11px;
   line-height: 1.45;
   color: var(--color-text-secondary);
-  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
   .crypto-card__lead {
-    font-size: 14px;
     margin-top: 4px;
+    font-size: 14px;
   }
 }
 </style>

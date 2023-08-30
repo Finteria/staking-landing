@@ -12,8 +12,13 @@ export default defineNuxtConfig({
       API_URL: process.env.API_URL,
       PLATFORM_URL: process.env.PLATFORM_URL,
       SENTRY_ENV: process.env.SENTRY_ENV,
+      recaptcha: {
+        v2SiteKey: process.env.RECAPTCHA_KEY,
+      },
     },
   },
+
+  modules: ["vue-recaptcha/nuxt"],
 
   vite: {
     css: {

@@ -41,7 +41,6 @@ const advantages = computed<Advantage[]>(() => {
 
 <style scoped>
 .advantages {
-  padding: 40px 0 30px;
   text-align: center;
 }
 
@@ -49,9 +48,9 @@ const advantages = computed<Advantage[]>(() => {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 1024px) {

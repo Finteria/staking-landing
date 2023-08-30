@@ -1,14 +1,14 @@
 <template>
   <header class="header">
     <div class="container">
-      <img class="logo" src="svg/logo.svg" width="124" height="30" alt="" />
+      <img class="logo" src="svg/logo.svg" width="124" height="30" alt="Finteria Cryptoverse" />
     </div>
   </header>
 
   <main class="main">
     <IntroSection />
     <HowItWorkSection class="main__how-it-work" />
-    <AdvantagesSection />
+    <AdvantagesSection class="main__advantages" />
     <StepsSection class="main__steps" />
     <CryptoSection class="main__crypto" />
     <LimitedOfferSection class="main__limited-offer" />
@@ -49,6 +49,12 @@ import LimitedOfferSection from "@/components/LimitedOfferSection.vue";
   }
 }
 
+@media screen and (min-width: 1376px) {
+  .header {
+    padding: 33px 0;
+  }
+}
+
 .logo {
   width: 124px;
   height: 30px;
@@ -68,6 +74,16 @@ import LimitedOfferSection from "@/components/LimitedOfferSection.vue";
 @media screen and (min-width: 768px) {
   .main__how-it-work {
     margin-top: 38px;
+  }
+}
+
+.main__advantages {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__advantages {
+    margin-top: 120px;
   }
 }
 
@@ -102,32 +118,32 @@ import LimitedOfferSection from "@/components/LimitedOfferSection.vue";
 }
 
 .footer {
+  padding: 23px 0 27px;
   font-size: 11px;
   line-height: 16px;
-  text-align: center;
   color: var(--color-text-tertiary);
+  text-align: center;
   background-color: var(--color-bg-tertiary);
-  padding: 23px 0 27px;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
+    margin-top: 120px;
     font-size: 14px;
     text-align: left;
-    margin-top: 120px;
   }
 
   .footer__container {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 130px;
     grid-template-rows: 20px 20px;
+    grid-template-columns: 1fr 130px;
+    grid-auto-flow: column;
   }
 }
 
 .footer__copy {
-  font-weight: 700;
   margin: 0;
+  font-weight: 700;
 }
 
 .footer__registered {

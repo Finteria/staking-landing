@@ -86,28 +86,28 @@ onMounted(() => {
 <style scoped lang="scss">
 .select {
   position: relative;
-  border: 1px solid rgb(50, 50, 57);
-  border-radius: 6px;
-  padding: 8px 12px 8px 9px;
-  cursor: pointer;
-  height: 36px;
-  transition: 0.2s linear;
-  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
+  height: 36px;
+  padding: 8px 12px 8px 9px;
+  cursor: pointer;
   background-color: transparent;
-  box-sizing: border-box;
+  border: 1px solid rgb(50, 50, 57);
+  border-radius: 6px;
+  transition: 0.2s linear;
+  -webkit-tap-highlight-color: transparent;
 
   @media (min-width: 768px) {
     height: 40px;
   }
 
   &.open {
-    border-radius: 8px 8px 0 0;
     border-color: $sky;
+    border-radius: 8px 8px 0 0;
     .select__dropdown {
-      opacity: 1;
       visibility: visible;
+      opacity: 1;
     }
     .select__arrow {
       transform: rotate(180deg);
@@ -116,29 +116,30 @@ onMounted(() => {
 
   &__dropdown {
     position: absolute;
-    left: -2px;
     top: 100%;
+    left: -2px;
+    z-index: 1;
+    box-sizing: border-box;
+    width: calc(100% + 4px);
     padding: 0 9px 5px 9px;
+    visibility: hidden;
     background: #09001a;
     border: 1px solid $sky;
     border-top: 0;
     border-radius: 0 0 8px 8px;
-    width: calc(100% + 4px);
     opacity: 0;
-    visibility: hidden;
     transition: 0.2s linear;
-    box-sizing: border-box;
   }
 
   &__text {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 140%;
-    text-transform: uppercase;
-    color: #fff;
-    -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
 
     @media (min-width: 768px) {
       font-size: 18px;
@@ -146,11 +147,11 @@ onMounted(() => {
   }
 
   &__row {
-    margin: 0 -9px;
+    box-sizing: border-box;
     width: calc(100% + 18px);
     padding: 5px 9px;
+    margin: 0 -9px;
     cursor: pointer;
-    box-sizing: border-box;
 
     &:hover {
       background: $sky;
@@ -161,18 +162,18 @@ onMounted(() => {
   }
 
   &__el {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     -webkit-tap-highlight-color: transparent;
   }
 
   &__arrow {
-    margin-left: auto;
     flex-shrink: 0;
     width: 12px;
     height: 12px;
+    margin-left: auto;
     background: url("/svg/calc/arrow.svg") center / contain no-repeat;
   }
 

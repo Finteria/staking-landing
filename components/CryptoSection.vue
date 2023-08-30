@@ -42,18 +42,18 @@ const crypto = computed<Crypto[]>(() => {
   justify-content: space-between;
   max-width: 645px;
   height: 214px;
-  list-style: none;
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {
   .crypto__list {
     position: static;
-    height: auto;
     align-items: center;
-    padding-left: 28px;
+    height: auto;
     padding-right: 28px;
+    padding-left: 28px;
   }
 }
 

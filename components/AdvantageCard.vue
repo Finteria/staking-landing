@@ -18,10 +18,10 @@
 .advantage {
   display: grid;
   grid-template-rows: repeat(3, min-content);
+  padding: 20px 15px;
   text-align: left;
   background-color: var(--color-bg-secondary);
   border-radius: 6px;
-  padding: 20px 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -31,28 +31,28 @@
 }
 
 .advantage__title {
+  margin: 0;
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.35;
-  margin: 0;
-  margin-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
   .advantage__title {
-    font-size: 24px;
     margin-top: 14px;
+    font-size: 24px;
   }
 }
 
 .advantage__lead {
   order: -1;
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
   color: var(--color-accent);
   text-transform: uppercase;
-  margin: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -63,11 +63,11 @@
 }
 
 .advantage__text {
+  margin: 0;
+  margin-top: 3px;
   font-size: 11px;
   line-height: 1.45;
   color: var(--color-text-secondary);
-  margin: 0;
-  margin-top: 3px;
 }
 
 @media screen and (min-width: 1024px) {

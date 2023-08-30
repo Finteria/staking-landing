@@ -1,10 +1,19 @@
 export default {
   main: {
     title: "Double portfolio in 30 sec by predicting the market",
-    lear: "Earn passive income up to 10% APY",
+    lead: "Earn passive income up to 10% APY",
     growMyCrypto: "Grow my crypto",
+    icons: {
+      avax: "I believe in AVAX",
+      dot: "DOT is the future!",
+      ada: "ADA is tomorrow's choice",
+      sol: "SOL 7% APY",
+      eth: "ETH 5% APY",
+    },
   },
-  howItWork: "How does it work?",
+  howItWork: {
+    title: "How does it work?",
+  },
   advantages: {
     title: "Advantages",
     items: [

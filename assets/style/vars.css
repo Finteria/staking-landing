@@ -8,9 +8,10 @@
   --color-text-primary: #ffffff;
   --color-text-secondary: #777777;
   --color-text-tertiary: #ffffff80;
+  --color-error: #dc3545;
 
   --gradient-primary: linear-gradient(180deg, #d137ff 0%, #5918e5 100%);
-  --gradient-secondary: linear-gradient(180deg, rgba(79, 0, 229, 1) 0%, #09001a 100%);
+  --gradient-secondary: linear-gradient(180deg, rgba(79, 0, 229, 0.5) 0%, #09001a 99.48%);
 
   --shadow-primary: rgba(206, 55, 255, 0.4);
 }

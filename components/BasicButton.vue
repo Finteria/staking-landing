@@ -21,26 +21,26 @@ withDefaults(defineProps<Props>(), {
 <style scoped>
 .basic-button {
   display: inline-block;
+  padding: 0 30px;
   font-size: 16px;
   font-weight: 600;
   line-height: 46px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
   color: var(--color-text-primary);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
   background: var(--gradient-primary);
   border: 0;
   border-radius: 146px;
-  padding: 0 30px;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .basic-button {
+    padding: 0 50px;
     font-size: 20px;
     line-height: 70px;
-    padding: 0 50px;
   }
 }
 </style>

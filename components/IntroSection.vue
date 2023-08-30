@@ -10,16 +10,46 @@
       </p>
 
       <div class="intro__talks intro__talks-top">
-        <img class="intro__talk intro__talk-avax" src="svg/avax.svg" width="118" height="91" alt="" />
-        <img class="intro__talk intro__talk-dot" src="svg/dot.svg" width="94" height="109" alt="" />
-        <img class="intro__talk intro__talk-ada" src="svg/ada.svg" width="118" height="104" alt="" />
+        <img
+          class="intro__talk intro__talk-avax"
+          src="svg/avax.svg"
+          width="118"
+          height="91"
+          :alt="$t('main.icons.avax')"
+        />
+        <img
+          class="intro__talk intro__talk-dot"
+          src="svg/dot.svg"
+          width="94"
+          height="109"
+          :alt="$t('main.icons.dot')"
+        />
+        <img
+          class="intro__talk intro__talk-ada"
+          src="svg/ada.svg"
+          width="118"
+          height="104"
+          :alt="$t('main.icons.ada')"
+        />
       </div>
 
       <BasicButton class="intro__grow" link href="#limited"> {{ $t("main.growMyCrypto") }} </BasicButton>
 
       <div class="intro__talks intro__talks-bottom">
-        <img class="intro__talk intro__talk-sol" src="svg/sol.svg" width="120" height="99" alt="" />
-        <img class="intro__talk intro__talk-eth" src="svg/eth.svg" width="120" height="103" alt="" />
+        <img
+          class="intro__talk intro__talk-sol"
+          src="svg/sol.svg"
+          width="120"
+          height="99"
+          :alt="$t('main.icons.sol')"
+        />
+        <img
+          class="intro__talk intro__talk-eth"
+          src="svg/eth.svg"
+          width="120"
+          height="103"
+          :alt="$t('main.icons.eth')"
+        />
       </div>
     </div>
   </section>
@@ -41,14 +71,28 @@ import BasicButton from "@/components/BasicButton.vue";
 }
 
 .intro__talks-top {
+  align-items: flex-end;
   order: -1;
   height: 132px;
-  align-items: flex-end;
 }
 
 @media screen and (min-width: 768px) {
   .intro__talks-top {
-    height: 290px;
+    height: 292px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__talks-top {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .intro__talks-top {
+    position: relative;
+    display: block;
+    height: 245px;
   }
 }
 
@@ -61,6 +105,18 @@ import BasicButton from "@/components/BasicButton.vue";
     position: relative;
     padding-bottom: 200px;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__talks-bottom {
+    padding-bottom: 180px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .intro__talks-bottom {
+    padding-bottom: 110px;
   }
 }
 
@@ -80,6 +136,14 @@ import BasicButton from "@/components/BasicButton.vue";
   .intro__talk-avax {
     width: 293px;
     height: 226px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .intro__talk-avax {
+    position: absolute;
+    top: 37px;
+    left: 43px;
   }
 }
 
@@ -103,6 +167,15 @@ import BasicButton from "@/components/BasicButton.vue";
   }
 }
 
+@media screen and (min-width: 1376px) {
+  .intro__talk-dot {
+    position: absolute;
+    top: -63px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .intro__talk-ada {
   width: 118px;
   height: 104px;
@@ -119,6 +192,14 @@ import BasicButton from "@/components/BasicButton.vue";
   .intro__talk-ada {
     width: 294px;
     height: 259px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .intro__talk-ada {
+    position: absolute;
+    top: 20px;
+    right: 14px;
   }
 }
 
@@ -139,8 +220,17 @@ import BasicButton from "@/components/BasicButton.vue";
 
 @media screen and (min-width: 1024px) {
   .intro__talk-sol {
+    top: -70px;
     width: 285px;
     height: 236px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .intro__talk-sol {
+    top: -150px;
+    right: -160px;
+    left: auto;
   }
 }
 
@@ -161,38 +251,60 @@ import BasicButton from "@/components/BasicButton.vue";
 
 @media screen and (min-width: 1024px) {
   .intro__talk-eth {
+    top: -85px;
+    right: auto;
+    left: 0;
     width: 294px;
     height: 252px;
   }
 }
 
+@media screen and (min-width: 1376px) {
+  .intro__talk-eth {
+    top: -165px;
+    left: -160px;
+  }
+}
+
 .intro__title {
   width: 90%;
+  margin: 4px auto 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
-  margin: 4px auto 0;
 }
 
 @media screen and (min-width: 768px) {
   .intro__title {
-    font-size: 60px;
     margin-top: 30px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  .intro__title {
+    margin-top: 0;
   }
 }
 
 .intro__lead {
+  margin: 0;
+  margin-top: 10px;
   font-family: Montserrat, Inter, sans-serif;
   font-size: 18px;
   line-height: 1.35;
-  margin: 0;
-  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .intro__lead {
-    font-size: 24px;
     margin-top: 20px;
+    font-size: 24px;
   }
 }
 
