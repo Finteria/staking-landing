@@ -20,10 +20,14 @@
       <p class="footer__registered">{{ $t("footer.registered") }}</p>
 
       <p class="footer__privacy">
-        <a>{{ $t("footer.privacyPolicy") }}</a>
+        <a href="https://finteria.pro/files/documents/privacy-policy.pdf" target="_blank">
+          {{ $t("footer.privacyPolicy") }}
+        </a>
       </p>
       <p class="footer__terms">
-        <a>{{ $t("footer.termsConditions") }}</a>
+        <a href="https://finteria.pro/files/documents/terms-and-conditions.pdf" target="_blank">
+          {{ $t("footer.termsConditions") }}
+        </a>
       </p>
     </div>
   </footer>
