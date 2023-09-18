@@ -7,6 +7,10 @@ export default defineNuxtConfig({
     "@/assets/style/calc/main.scss",
   ],
 
+  app: {
+    baseURL: process.env.APP_BASE_URL,
+  },
+
   runtimeConfig: {
     public: {
       API_URL: process.env.API_URL,
