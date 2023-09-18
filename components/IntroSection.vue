@@ -12,21 +12,21 @@
       <div class="intro__talks intro__talks-top">
         <img
           class="intro__talk intro__talk-avax"
-          src="svg/avax.svg"
+          src="/svg/avax.svg"
           width="118"
           height="91"
           :alt="$t('main.icons.avax')"
         />
         <img
           class="intro__talk intro__talk-dot"
-          src="svg/dot.svg"
+          src="/svg/dot.svg"
           width="94"
           height="109"
           :alt="$t('main.icons.dot')"
         />
         <img
           class="intro__talk intro__talk-ada"
-          src="svg/ada.svg"
+          src="/svg/ada.svg"
           width="118"
           height="104"
           :alt="$t('main.icons.ada')"
@@ -38,14 +38,14 @@
       <div class="intro__talks intro__talks-bottom">
         <img
           class="intro__talk intro__talk-sol"
-          src="svg/sol.svg"
+          src="/svg/sol.svg"
           width="120"
           height="99"
           :alt="$t('main.icons.sol')"
         />
         <img
           class="intro__talk intro__talk-eth"
-          src="svg/eth.svg"
+          src="/svg/eth.svg"
           width="120"
           height="103"
           :alt="$t('main.icons.eth')"
@@ -221,6 +221,7 @@ import BasicButton from "@/components/BasicButton.vue";
 @media screen and (min-width: 1024px) {
   .intro__talk-sol {
     top: -70px;
+    left: -25px;
     width: 285px;
     height: 236px;
   }
@@ -252,8 +253,8 @@ import BasicButton from "@/components/BasicButton.vue";
 @media screen and (min-width: 1024px) {
   .intro__talk-eth {
     top: -85px;
-    right: auto;
-    left: 0;
+    right: -15px;
+    left: auto;
     width: 294px;
     height: 252px;
   }

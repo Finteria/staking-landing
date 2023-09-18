@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <img class="logo" src="svg/logo.svg" width="124" height="30" alt="Finteria Cryptoverse" />
+      <img class="logo" src="/svg/logo.svg" width="124" height="30" alt="Finteria Cryptoverse" />
     </div>
   </header>
 
@@ -20,12 +20,12 @@
       <p class="footer__registered">{{ $t("footer.registered") }}</p>
 
       <p class="footer__privacy">
-        <a href="https://finteria.pro/files/documents/privacy-policy.pdf" target="_blank">
+        <a class="footer__link" href="https://finteria.pro/files/documents/privacy-policy.pdf" target="_blank">
           {{ $t("footer.privacyPolicy") }}
         </a>
       </p>
       <p class="footer__terms">
-        <a href="https://finteria.pro/files/documents/terms-and-conditions.pdf" target="_blank">
+        <a class="footer__link" href="https://finteria.pro/files/documents/terms-and-conditions.pdf" target="_blank">
           {{ $t("footer.termsConditions") }}
         </a>
       </p>
@@ -36,10 +36,11 @@
 <script setup lang="ts">
 import IntroSection from "@/components/IntroSection.vue";
 import HowItWorkSection from "@/components/HowItWorkSection.vue";
-import AdvantagesSection from "@/components/AdvantagesSection.vue";
-import StepsSection from "@/components/StepsSection.vue";
-import CryptoSection from "@/components/CryptoSection.vue";
-import LimitedOfferSection from "@/components/LimitedOfferSection.vue";
+
+const AdvantagesSection = defineAsyncComponent(() => import("@/components/AdvantagesSection.vue"));
+const StepsSection = defineAsyncComponent(() => import("@/components/StepsSection.vue"));
+const CryptoSection = defineAsyncComponent(() => import("@/components/CryptoSection.vue"));
+const LimitedOfferSection = defineAsyncComponent(() => import("@/components/LimitedOfferSection.vue"));
 </script>
 
 <style scoped>
@@ -174,5 +175,10 @@ import LimitedOfferSection from "@/components/LimitedOfferSection.vue";
 
 .footer__terms {
   margin: 0;
+}
+
+.footer__link {
+  color: var(--color-text-tertiary);
+  text-decoration: none;
 }
 </style>
