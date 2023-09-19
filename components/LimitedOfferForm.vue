@@ -1,28 +1,34 @@
 <template>
   <form class="limited-offer__form" @submit.prevent="validate" autocomplete="off">
-    <label class="limited-offer__form-group limited-offer__form-group--email">
-      <input
-        v-model="formData.email"
-        class="limited-offer__input"
-        :class="{
-          'limited-offer__input--error': v$.email.$errors.length,
-        }"
-        type="email"
-        :placeholder="$t('limitedOffer.email')"
-      />
-    </label>
+    <div class="limited-offer__form-wrapper">
+      <label class="limited-offer__form-group limited-offer__form-group--email">
+        <input
+          v-model="formData.email"
+          class="limited-offer__input"
+          :class="{
+            'limited-offer__input--error': v$.email.$errors.length,
+          }"
+          type="email"
+          :placeholder="$t('limitedOffer.email')"
+        />
+      </label>
 
-    <label class="limited-offer__form-group limited-offer__form-group--password">
-      <input
-        v-model="formData.password"
-        class="limited-offer__input"
-        :class="{
-          'limited-offer__input--error': v$.email.$errors.length,
-        }"
-        type="password"
-        :placeholder="$t('limitedOffer.password')"
-      />
-    </label>
+      <label class="limited-offer__form-group limited-offer__form-group--password">
+        <input
+          v-model="formData.password"
+          class="limited-offer__input"
+          :class="{
+            'limited-offer__input--error': v$.email.$errors.length,
+          }"
+          type="password"
+          :placeholder="$t('limitedOffer.password')"
+        />
+      </label>
+
+      <p v-if="errors && errors.email" class="limited-offer__error">
+        {{ errors.email }}
+      </p>
+    </div>
 
     <div ref="root" />
 
@@ -60,6 +66,7 @@ const formData = reactive<{
 });
 
 const isLoad = ref(false);
+const errors = ref<{ email: string } | null>(null);
 const rules = {
   email: { required, email },
   password: {
@@ -97,8 +104,7 @@ onVerify(async (recaptchaToken: string) => {
       external: true,
     });
   } catch (error) {
-    console.log(error);
-    const errors = {
+    errors.value = {
       email: error.response?.data?.message,
     };
     isLoad.value = false;
@@ -121,10 +127,15 @@ onVerify(async (recaptchaToken: string) => {
 @media screen and (min-width: 768px) {
   .limited-offer__form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     margin-top: 28px;
+  }
+
+  .limited-offer__form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -163,7 +174,8 @@ onVerify(async (recaptchaToken: string) => {
 @media screen and (min-width: 768px) {
   .limited-offer__form-group {
     box-sizing: border-box;
-    width: 223px;
+    width: 49%;
+    max-width: 223px;
     height: 50px;
   }
 
@@ -238,5 +250,13 @@ onVerify(async (recaptchaToken: string) => {
     font-size: 15px;
     line-height: 50px;
   }
+}
+
+.limited-offer__error {
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+  color: var(--color-error);
+  text-align: left;
 }
 </style>

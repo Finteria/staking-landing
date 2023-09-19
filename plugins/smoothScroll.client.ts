@@ -10,6 +10,9 @@ export default defineNuxtPlugin(() => {
           selector.scrollIntoView({
             behavior: "smooth",
           });
+
+          const blink = document.querySelector(href);
+          blink?.classList.add("blink");
         }
       }
     });

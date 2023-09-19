@@ -136,3 +136,25 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@keyframes blink {
+  0% {
+    box-shadow: none;
+  }
+
+  30% {
+    box-shadow: 0 0 25px 3px var(--color-blink);
+  }
+
+  50% {
+    box-shadow: none;
+  }
+
+  70% {
+    box-shadow: 0 0 25px 3px var(--color-blink);
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}

@@ -64,6 +64,12 @@ import LimitedOfferForm from "@/components/LimitedOfferForm.vue";
   background-color: var(--color-bg-opacity);
 }
 
+.blink .limited-offer__wrapper {
+  animation-name: blink;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+}
+
 @media screen and (min-width: 768px) {
   .limited-offer__wrapper {
     padding: 42px 24px 60px;
