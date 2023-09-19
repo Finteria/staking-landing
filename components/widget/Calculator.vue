@@ -202,38 +202,4 @@ async function claimBonus() {
 .calc__select {
   width: 200px;
 }
-
-@media screen and (min-width: 1376px) {
-  .calc__group {
-    display: flex;
-  }
-
-  .calc__content {
-    margin: 0;
-    margin-left: 33px;
-  }
-
-  .calc__wrapper {
-    display: block;
-    flex-shrink: 0;
-    width: 265px;
-  }
-
-  .calc__col:not(:first-child) {
-    margin-top: 20px;
-  }
-
-  .calc__name {
-    text-align: left;
-  }
-
-  .calc-modal {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .calc-modal__button {
-    cursor: pointer;
-  }
-}
 </style>

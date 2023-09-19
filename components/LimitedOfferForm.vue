@@ -82,7 +82,6 @@ const validate = async () => {
 };
 
 onVerify(async (recaptchaToken: string) => {
-  console.log("test", recaptchaToken);
   try {
     formData.recaptcha_token = recaptchaToken;
     const { user, token } = await registerUser(formData).then((response) => response.data);

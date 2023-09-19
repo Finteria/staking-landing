@@ -46,6 +46,24 @@
   @media screen and (min-width: 1024px) {
     padding: 30px;
   }
+
+  @media screen and (min-width: 1376px) {
+    display: block;
+    flex-shrink: 0;
+    width: 265px;
+  }
+}
+
+.calc__group {
+  @media screen and (min-width: 1376px) {
+    display: flex;
+  }
+}
+
+.calc-modal__button {
+  @media screen and (min-width: 1376px) {
+    cursor: pointer;
+  }
 }
 
 .calc__col {
@@ -59,6 +77,10 @@
 
     @media screen and (min-width: 768px) {
       margin: 0;
+    }
+
+    @media screen and (min-width: 1376px) {
+      margin-top: 20px;
     }
   }
 
@@ -77,6 +99,10 @@
     font-size: 14px;
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1376px) {
+    text-align: left;
   }
 }
 
@@ -107,6 +133,11 @@
   padding: 30px 20px 15px;
   box-sizing: border-box;
   background-color: #09001a;
+
+  @media screen and (min-width: 1376px) {
+    margin: 0;
+    margin-left: 33px;
+  }
 }
 
 .calc {
@@ -257,7 +288,8 @@
   padding: 30px 30px;
   position: absolute;
   left: 0;
-  top: -80px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   opacity: 0;
   visibility: hidden;
@@ -267,7 +299,7 @@
   @include media-breakpoint-down("lg") {
     padding: 30px 20px;
     top: -20px;
-    left: 50%;
+    left: 0;
     transform: translateX(-50%);
     top: 0;
   }
@@ -275,6 +307,11 @@
   @media (max-width: 767px) {
     width: 100%;
     padding: 20px;
+  }
+
+  @media (max-width: 1376px) {
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &.open {
