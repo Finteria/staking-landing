@@ -136,6 +136,7 @@ onVerify(async (recaptchaToken: string) => {
   .limited-offer__form-wrapper {
     display: flex;
     flex-wrap: wrap;
+    max-width: 448px;
   }
 }
 
