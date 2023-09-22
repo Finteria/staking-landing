@@ -5,9 +5,9 @@
         {{ $t("main.title") }}
       </h1>
 
-      <p class="intro__lead">
+      <!-- <p class="intro__lead">
         {{ $t("main.lead") }}
-      </p>
+      </p> -->
 
       <div class="intro__talks intro__talks-top">
         <img

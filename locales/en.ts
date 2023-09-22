@@ -18,11 +18,6 @@ export default {
     title: "Advantages",
     items: [
       {
-        title: "Staking reward",
-        lead: "Up to 10%",
-        text: "Your additional income",
-      },
-      {
         title: "Minimum deposit",
         lead: "$250",
         text: "Affordable for everyone",
@@ -31,6 +26,11 @@ export default {
         title: "Free practice account",
         lead: "$10 000",
         text: "Suitable for beginners",
+      },
+      {
+        title: "Staking reward",
+        lead: "Up to 10%",
+        text: "Your additional income",
       },
       {
         title: "Trading assets",
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: "Trade Crypto or Forex",
-        lead: "Earn up to 90% with each trade",
+        lead: "Earn up to 90% with each trade.  \n Up to 10% APY on balance",
         icon: "chart",
       },
     ],
