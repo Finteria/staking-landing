@@ -9,7 +9,7 @@ export function getCookie(name: string): string | undefined {
 
 export function setCookie(name: string, value: string, options: CookieAttributes = {}): void {
   const config = useRuntimeConfig();
-  const domain = cookieMeta[config.SENTRY_ENV].domain();
+  const domain = cookieMeta[config.public.SENTRY_ENV].domain();
 
   if (domain) {
     options = {
