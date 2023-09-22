@@ -32,7 +32,7 @@
 
     <div ref="root" />
 
-    <BasicButton class="limited-offer__submit" type="submit">
+    <BasicButton class="limited-offer__submit" type="submit" :loading="isLoad">
       {{ $t("limitedOffer.getBonus") }}
     </BasicButton>
   </form>
